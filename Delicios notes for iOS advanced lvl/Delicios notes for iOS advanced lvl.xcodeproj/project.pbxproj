@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10BFF9F96599EAF62FF9D175 /* libPods-Delicios notes for iOS advanced lvl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247B1D526C557ABEFBE83740 /* libPods-Delicios notes for iOS advanced lvl.a */; };
+		2C0D15B92CE2399600E81D17 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C0D15B82CE2399600E81D17 /* Alamofire */; };
+		2C0D15BB2CE239AD00E81D17 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C0D15BA2CE239AD00E81D17 /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C0D155A2CE2186600E81D17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C0D15412CE2186400E81D17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C0D15482CE2186400E81D17;
+			remoteInfo = "Delicios notes for iOS advanced lvl";
+		};
+		2C0D15642CE2186600E81D17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C0D15412CE2186400E81D17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C0D15482CE2186400E81D17;
+			remoteInfo = "Delicios notes for iOS advanced lvl";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		247B1D526C557ABEFBE83740 /* libPods-Delicios notes for iOS advanced lvl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Delicios notes for iOS advanced lvl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0D15492CE2186400E81D17 /* Delicios notes for iOS advanced lvl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delicios notes for iOS advanced lvl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0D15592CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Delicios notes for iOS advanced lvlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0D15632CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Delicios notes for iOS advanced lvlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		448B6DF645D06D6D73AD5590 /* Pods-Delicios notes for iOS advanced lvl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delicios notes for iOS advanced lvl.debug.xcconfig"; path = "Target Support Files/Pods-Delicios notes for iOS advanced lvl/Pods-Delicios notes for iOS advanced lvl.debug.xcconfig"; sourceTree = "<group>"; };
+		EDA4D8678E29B1F39D4A5DCC /* Pods-Delicios notes for iOS advanced lvl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Delicios notes for iOS advanced lvl.release.xcconfig"; path = "Target Support Files/Pods-Delicios notes for iOS advanced lvl/Pods-Delicios notes for iOS advanced lvl.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2C0D154B2CE2186400E81D17 /* Delicios notes for iOS advanced lvl */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Delicios notes for iOS advanced lvl";
+			sourceTree = "<group>";
+		};
+		2C0D155C2CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Delicios notes for iOS advanced lvlTests";
+			sourceTree = "<group>";
+		};
+		2C0D15662CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Delicios notes for iOS advanced lvlUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C0D15462CE2186400E81D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10BFF9F96599EAF62FF9D175 /* libPods-Delicios notes for iOS advanced lvl.a in Frameworks */,
+				2C0D15BB2CE239AD00E81D17 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0D15562CE2186600E81D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0D15602CE2186600E81D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0D15B92CE2399600E81D17 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129B2379FC6D30A6FDC92E8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				448B6DF645D06D6D73AD5590 /* Pods-Delicios notes for iOS advanced lvl.debug.xcconfig */,
+				EDA4D8678E29B1F39D4A5DCC /* Pods-Delicios notes for iOS advanced lvl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2C0D15402CE2186400E81D17 = {
+			isa = PBXGroup;
+			children = (
+				2C0D154B2CE2186400E81D17 /* Delicios notes for iOS advanced lvl */,
+				2C0D155C2CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */,
+				2C0D15662CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */,
+				2C0D154A2CE2186400E81D17 /* Products */,
+				129B2379FC6D30A6FDC92E8C /* Pods */,
+				4C09ADB3C19ACD7B4821A2E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C0D154A2CE2186400E81D17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C0D15492CE2186400E81D17 /* Delicios notes for iOS advanced lvl.app */,
+				2C0D15592CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests.xctest */,
+				2C0D15632CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C09ADB3C19ACD7B4821A2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247B1D526C557ABEFBE83740 /* libPods-Delicios notes for iOS advanced lvl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C0D15482CE2186400E81D17 /* Delicios notes for iOS advanced lvl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0D156D2CE2186600E81D17 /* Build configuration list for PBXNativeTarget "Delicios notes for iOS advanced lvl" */;
+			buildPhases = (
+				6027497577D0E9EB00DC9E3A /* [CP] Check Pods Manifest.lock */,
+				2C0D15452CE2186400E81D17 /* Sources */,
+				2C0D15462CE2186400E81D17 /* Frameworks */,
+				2C0D15472CE2186400E81D17 /* Resources */,
+				3C44E974FA5CCD3C37DB561D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2C0D154B2CE2186400E81D17 /* Delicios notes for iOS advanced lvl */,
+			);
+			name = "Delicios notes for iOS advanced lvl";
+			productName = "Delicios notes for iOS advanced lvl";
+			productReference = 2C0D15492CE2186400E81D17 /* Delicios notes for iOS advanced lvl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C0D15582CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0D15702CE2186600E81D17 /* Build configuration list for PBXNativeTarget "Delicios notes for iOS advanced lvlTests" */;
+			buildPhases = (
+				2C0D15552CE2186600E81D17 /* Sources */,
+				2C0D15562CE2186600E81D17 /* Frameworks */,
+				2C0D15572CE2186600E81D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C0D155B2CE2186600E81D17 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C0D155C2CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */,
+			);
+			name = "Delicios notes for iOS advanced lvlTests";
+			productName = "Delicios notes for iOS advanced lvlTests";
+			productReference = 2C0D15592CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C0D15622CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0D15732CE2186600E81D17 /* Build configuration list for PBXNativeTarget "Delicios notes for iOS advanced lvlUITests" */;
+			buildPhases = (
+				2C0D155F2CE2186600E81D17 /* Sources */,
+				2C0D15602CE2186600E81D17 /* Frameworks */,
+				2C0D15612CE2186600E81D17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C0D15652CE2186600E81D17 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C0D15662CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */,
+			);
+			name = "Delicios notes for iOS advanced lvlUITests";
+			productName = "Delicios notes for iOS advanced lvlUITests";
+			productReference = 2C0D15632CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C0D15412CE2186400E81D17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					2C0D15482CE2186400E81D17 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					2C0D15582CE2186600E81D17 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2C0D15482CE2186400E81D17;
+					};
+					2C0D15622CE2186600E81D17 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 2C0D15482CE2186400E81D17;
+					};
+				};
+			};
+			buildConfigurationList = 2C0D15442CE2186400E81D17 /* Build configuration list for PBXProject "Delicios notes for iOS advanced lvl" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C0D15402CE2186400E81D17;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2C0D154A2CE2186400E81D17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C0D15482CE2186400E81D17 /* Delicios notes for iOS advanced lvl */,
+				2C0D15582CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */,
+				2C0D15622CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C0D15472CE2186400E81D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0D15572CE2186600E81D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0D15612CE2186600E81D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C44E974FA5CCD3C37DB561D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Delicios notes for iOS advanced lvl/Pods-Delicios notes for iOS advanced lvl-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Delicios notes for iOS advanced lvl/Pods-Delicios notes for iOS advanced lvl-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Delicios notes for iOS advanced lvl/Pods-Delicios notes for iOS advanced lvl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6027497577D0E9EB00DC9E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Delicios notes for iOS advanced lvl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C0D15452CE2186400E81D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0D15552CE2186600E81D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0D155F2CE2186600E81D17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C0D155B2CE2186600E81D17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C0D15482CE2186400E81D17 /* Delicios notes for iOS advanced lvl */;
+			targetProxy = 2C0D155A2CE2186600E81D17 /* PBXContainerItemProxy */;
+		};
+		2C0D15652CE2186600E81D17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C0D15482CE2186400E81D17 /* Delicios notes for iOS advanced lvl */;
+			targetProxy = 2C0D15642CE2186600E81D17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C0D156B2CE2186600E81D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C0D156C2CE2186600E81D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C0D156E2CE2186600E81D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 448B6DF645D06D6D73AD5590 /* Pods-Delicios notes for iOS advanced lvl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Delicios notes for iOS advanced lvl/Preview Content\"";
+				DEVELOPMENT_TEAM = 37HZPPLQGM;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "C.Delicios-notes-for-iOS-advanced-lvl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C0D156F2CE2186600E81D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA4D8678E29B1F39D4A5DCC /* Pods-Delicios notes for iOS advanced lvl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Delicios notes for iOS advanced lvl/Preview Content\"";
+				DEVELOPMENT_TEAM = 37HZPPLQGM;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "C.Delicios-notes-for-iOS-advanced-lvl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C0D15712CE2186600E81D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37HZPPLQGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "C.Delicios-notes-for-iOS-advanced-lvlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Delicios notes for iOS advanced lvl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Delicios notes for iOS advanced lvl";
+			};
+			name = Debug;
+		};
+		2C0D15722CE2186600E81D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37HZPPLQGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "C.Delicios-notes-for-iOS-advanced-lvlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Delicios notes for iOS advanced lvl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Delicios notes for iOS advanced lvl";
+			};
+			name = Release;
+		};
+		2C0D15742CE2186600E81D17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37HZPPLQGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "C.Delicios-notes-for-iOS-advanced-lvlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Delicios notes for iOS advanced lvl";
+			};
+			name = Debug;
+		};
+		2C0D15752CE2186600E81D17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37HZPPLQGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "C.Delicios-notes-for-iOS-advanced-lvlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Delicios notes for iOS advanced lvl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C0D15442CE2186400E81D17 /* Build configuration list for PBXProject "Delicios notes for iOS advanced lvl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0D156B2CE2186600E81D17 /* Debug */,
+				2C0D156C2CE2186600E81D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C0D156D2CE2186600E81D17 /* Build configuration list for PBXNativeTarget "Delicios notes for iOS advanced lvl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0D156E2CE2186600E81D17 /* Debug */,
+				2C0D156F2CE2186600E81D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C0D15702CE2186600E81D17 /* Build configuration list for PBXNativeTarget "Delicios notes for iOS advanced lvlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0D15712CE2186600E81D17 /* Debug */,
+				2C0D15722CE2186600E81D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C0D15732CE2186600E81D17 /* Build configuration list for PBXNativeTarget "Delicios notes for iOS advanced lvlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0D15742CE2186600E81D17 /* Debug */,
+				2C0D15752CE2186600E81D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C0D15B82CE2399600E81D17 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2C0D15BA2CE239AD00E81D17 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2C0D15412CE2186400E81D17 /* Project object */;
+}
