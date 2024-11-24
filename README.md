@@ -4,7 +4,7 @@ Book recipe with category and random recipes for iOS
 ### Main page
 Main page have 10+ category recipes.  
 Each category has at least 10 recipes:
-![](./misc/mainPage.PNG)
+<img src="misc/mainPage.PNG.png" width="200" height="200">
 
 
 ### Category
