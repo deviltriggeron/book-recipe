@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Delicios_notes_for_iOS_advanced_lvlApp: App {
+    @State var container: Injection = Injection()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(container: container)
         }
     }
 }
+
+// translate api

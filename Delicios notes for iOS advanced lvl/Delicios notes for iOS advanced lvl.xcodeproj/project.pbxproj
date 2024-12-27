@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10BFF9F96599EAF62FF9D175 /* libPods-Delicios notes for iOS advanced lvl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 247B1D526C557ABEFBE83740 /* libPods-Delicios notes for iOS advanced lvl.a */; };
 		2C0D15B92CE2399600E81D17 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C0D15B82CE2399600E81D17 /* Alamofire */; };
-		2C0D15BB2CE239AD00E81D17 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2C0D15BA2CE239AD00E81D17 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,16 +43,6 @@
 			path = "Delicios notes for iOS advanced lvl";
 			sourceTree = "<group>";
 		};
-		2C0D155C2CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Delicios notes for iOS advanced lvlTests";
-			sourceTree = "<group>";
-		};
-		2C0D15662CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Delicios notes for iOS advanced lvlUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +51,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BFF9F96599EAF62FF9D175 /* libPods-Delicios notes for iOS advanced lvl.a in Frameworks */,
-				2C0D15BB2CE239AD00E81D17 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,8 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				2C0D154B2CE2186400E81D17 /* Delicios notes for iOS advanced lvl */,
-				2C0D155C2CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */,
-				2C0D15662CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */,
 				2C0D154A2CE2186400E81D17 /* Products */,
 				129B2379FC6D30A6FDC92E8C /* Pods */,
 				4C09ADB3C19ACD7B4821A2E6 /* Frameworks */,
@@ -161,9 +147,6 @@
 			dependencies = (
 				2C0D155B2CE2186600E81D17 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				2C0D155C2CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests */,
-			);
 			name = "Delicios notes for iOS advanced lvlTests";
 			productName = "Delicios notes for iOS advanced lvlTests";
 			productReference = 2C0D15592CE2186600E81D17 /* Delicios notes for iOS advanced lvlTests.xctest */;
@@ -181,9 +164,6 @@
 			);
 			dependencies = (
 				2C0D15652CE2186600E81D17 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				2C0D15662CE2186600E81D17 /* Delicios notes for iOS advanced lvlUITests */,
 			);
 			name = "Delicios notes for iOS advanced lvlUITests";
 			productName = "Delicios notes for iOS advanced lvlUITests";
@@ -223,7 +203,6 @@
 			mainGroup = 2C0D15402CE2186400E81D17;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2C0D154A2CE2186400E81D17 /* Products */;
@@ -648,11 +627,6 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		2C0D15B82CE2399600E81D17 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		2C0D15BA2CE239AD00E81D17 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2C0D159E2CE2199B00E81D17 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
