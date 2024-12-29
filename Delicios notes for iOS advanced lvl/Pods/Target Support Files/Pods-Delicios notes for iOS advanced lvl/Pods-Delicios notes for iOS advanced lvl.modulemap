@@ -1,6 +1,0 @@
-module Pods_Delicios_notes_for_iOS_advanced_lvl {
-  umbrella header "Pods-Delicios notes for iOS advanced lvl-umbrella.h"
-
-  export *
-  module * { export * }
-}

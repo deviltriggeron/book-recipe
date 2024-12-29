@@ -1,6 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-Delicios notes for iOS advanced lvl/Pods-Delicios notes for iOS advanced lvl-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/Realm/realm_objc_privacy.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/realm_swift_privacy.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift_Privacy.bundle
-${PODS_CONFIGURATION_BUILD_DIR}/Swinject/Swinject.bundle
