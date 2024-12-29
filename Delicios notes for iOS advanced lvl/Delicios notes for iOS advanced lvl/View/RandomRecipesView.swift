@@ -9,17 +9,17 @@ import SwiftUI
 
 struct RandomRecipeView: View {
     @Environment(\.colorScheme) private var colorScheme
-    var container: Injection
+    @State var container: Injection
     @StateObject var controller: Controller
-    @State var database: Database
+    @StateObject var database: Database
     init(container: Injection) {
         _controller = StateObject(wrappedValue: container.resolve(Controller.self)!)
-        _database = State(wrappedValue: container.resolve(Database.self)!)
+        _database = StateObject(wrappedValue: container.resolve(Database.self)!)
         self.container = container
     }
     var body: some View {
         ScrollView {
-            ForEach(database.readRandomRecipe(), id: \.idMeal) { recipe in
+            ForEach(controller.publishedVar.randomRecipe, id: \.idMeal) { recipe in
                 NavigationLink(destination: RandomRecipeInstructionView(recipe: recipe)) {
                     HStack {
                         Text("\(recipe.strMeal)")
@@ -54,40 +54,44 @@ struct RandomRecipeView: View {
                 }
             }
             .onAppear() {
-                dateUpdate()
+                controller.dateUpdate()
+                controller.getRandomRecipe()
         }
     }
     
-    private func dateUpdate() {
-        let dateInt = controller.getDate()
-        if isFirstLaunch() {
-            do {
-                let date: DateObject = DateObject(day: dateInt)
-                _ = try database.createDate(date: date)
-                controller.getTenRandomRecipes()
-            } catch {
-                print("error first")
-            }
-        } else {
-            do {
-                let date: DateObject = DateObject(day: dateInt)
-                let dateArray = database.readDate()
-                if dateArray[0].day != date.day {
-                    _ =  try database.updateDate(updatedDate: dateArray[0], newDate: dateInt)
-                    
-                    controller.getTenRandomRecipes()
-                }
-            } catch {
-                print("error not first")
-            }
-        }
-    }
+//    private func dateUpdate() {
+//        let dateInt = controller.getDate()
+//        if isFirstLaunch() {
+//            do {
+//                let date: DateObject = DateObject(day: dateInt)
+//                _ = try database.createDate(date: date)
+//                controller.getTenRandomRecipes()
+//            } catch {
+//                print("error first")
+//            }
+//        } else {
+//            do {
+//                let date: DateObject = DateObject(day: dateInt)
+//                let dateArray = database.readDate()
+//                if dateArray[0].day != date.day {
+//                    _ = try database.updateDate(updatedDate: dateArray[0], newDate: dateInt)
+//                    let randomRecipeArray = database.readRandomRecipe()
+//                    for deletedIndex in 0...database.readRandomRecipe().count - 1 {
+//                        _ = try database.deleteRandomRecipe(deletedRecipe: randomRecipeArray[deletedIndex])
+//                    }
+//                    controller.getTenRandomRecipes()
+//                }
+//            } catch {
+//                print("error not first")
+//            }
+//        }
+//    }
 }
 
-private func isFirstLaunch() -> Bool {
-    let isFirstLaunch = !UserDefaults.standard.bool(forKey: "HasLaunchedBefore")
-    if isFirstLaunch {
-        UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
-    }
-    return isFirstLaunch
-}
+//private func isFirstLaunch() -> Bool {
+//    let isFirstLaunch = !UserDefaults.standard.bool(forKey: "HasLaunchedBefore")
+//    if isFirstLaunch {
+//        UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
+//    }
+//    return isFirstLaunch
+//}

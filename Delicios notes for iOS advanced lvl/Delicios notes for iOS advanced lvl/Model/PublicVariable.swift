@@ -11,12 +11,12 @@ struct PublicVariable {
     var category: Categories
     var recipes: Recipes
     var recipe: Recipe
-    var randomRecipe: [RandomRecipe]
+    var randomRecipe: [RecipeObject]
     
     init() {
         self.category = Categories(categories: [CategoryFromAPI(idCategory: "", strCategory: "", strCategoryThumb: "", strCategoryDescription: "")])
         self.recipes = Recipes(meals: [RecipesFromApi(idMeal: "", strMeal: "", strMealThumb: "")])
         self.recipe = Recipe(meals: [RecipeFromApi(idMeal: "", strMeal: "", strMealThumb: "", strInstructions: "")])
-        self.randomRecipe = [RandomRecipe(meals: [RecipeFromApi(idMeal: "", strMeal: "", strMealThumb: "", strInstructions: "")])]
+        self.randomRecipe = [RecipeObject]()
     }
 }

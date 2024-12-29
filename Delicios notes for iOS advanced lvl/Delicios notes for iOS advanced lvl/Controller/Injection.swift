@@ -19,8 +19,14 @@ class Injection {
     }
     
     func setup() {
-        container.register(Database.self) { _ in Database() }
-        container.register(Controller.self) { _ in Controller() }
+        container.register(Database.self) { _ in Database.shared }
+        container.register(AlamofireService.self) { resolver in
+            let database = resolver.resolve(Database.self)!
+            return AlamofireService(database: database)}
+        container.register(Controller.self) { resolver in
+            let service = resolver.resolve(AlamofireService.self)!
+            let database = resolver.resolve(Database.self)!
+            return Controller(service: service, database: database) }
     }
     
     func resolve<T>(_ type: T.Type) -> T? {

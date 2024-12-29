@@ -9,7 +9,13 @@ import Foundation
 import RxSwift
 
 class Controller: ObservableObject {
-    let service: AlamofireService = AlamofireService()
+    let service: AlamofireService
+    let database: Database
+    
+    init(service: AlamofireService, database: Database) {
+        self.service = service
+        self.database = database
+    }
     
     @Published var publishedVar: PublicVariable = PublicVariable()
     
@@ -54,24 +60,51 @@ class Controller: ObservableObject {
         self.publishedVar.recipe = response
     }
     
+    func dateUpdate() {
+        let dateInt = getDate()
+        if isFirstLaunch() {
+            do {
+                let date: DateObject = DateObject(day: dateInt)
+                _ = try database.createDate(date: date)
+                getTenRandomRecipes()
+            } catch {
+                print("error first")
+            }
+        } else {
+            do {
+                let date: DateObject = DateObject(day: dateInt)
+                let dateArray = database.readDate()
+                if dateArray[0].day != date.day {
+                    _ = try database.updateDate(updatedDate: dateArray[0], newDate: dateInt)
+                    let randomRecipeArray = database.readRandomRecipe()
+                    for deletedIndex in 0...database.readRandomRecipe().count - 1 {
+                        _ = try database.deleteRandomRecipe(deletedRecipe: randomRecipeArray[deletedIndex])
+                    }
+                    getTenRandomRecipes()
+                }
+            } catch {
+                print("error not first")
+            }
+        }
+    }
+    
+    private func isFirstLaunch() -> Bool {
+        let isFirstLaunch = !UserDefaults.standard.bool(forKey: "HasLaunchedBefore")
+        if isFirstLaunch {
+            UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
+        }
+        return isFirstLaunch
+    }
+    
     func getTenRandomRecipes() {
         for _ in 0..<10 {
             service.addRandomRecipeToDatabase()
         }
     }
     
-//    func getRandomRecipe() {
-//        service.getRandomRecipe().subscribe(onNext: { [ weak self ] response in
-//            self?.handleGetResult(response)
-//            print("Random recipe loaded")
-//        }, onError: { error in
-//            print("Error load random recipe")
-//        }).disposed(by: bag)
-//    }
-//    
-//    private func handleGetResult(_ response: RandomRecipe) {
-//        self.publishedVar.randomRecipe.append(response)
-//    }
+    func getRandomRecipe() {
+        self.publishedVar.randomRecipe = database.readRandomRecipe()
+    }
     
     func getDate() -> Int {
         let date = Date()

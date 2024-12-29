@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class Database {
+class Database: ObservableObject {
     static let shared = Database()
     
     private let realm: Realm

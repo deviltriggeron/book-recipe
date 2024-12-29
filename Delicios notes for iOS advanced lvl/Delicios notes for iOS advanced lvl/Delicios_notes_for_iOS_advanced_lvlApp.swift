@@ -16,5 +16,4 @@ struct Delicios_notes_for_iOS_advanced_lvlApp: App {
         }
     }
 }
-
 // translate api

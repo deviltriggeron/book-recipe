@@ -8,10 +8,13 @@
 import RxSwift
 import Alamofire
 
-
 class AlamofireService: ObservableObject {
     
-    var database = Database.shared
+    var database: Database
+    
+    init(database: Database) {
+        self.database = database
+    }
     
     let bag = DisposeBag()
     
@@ -94,7 +97,7 @@ class AlamofireService: ObservableObject {
         for recipe in response.meals {
             let responseRecipe: RecipeObject = RecipeObject(idMeal: recipe.idMeal, strMeal: recipe.strMeal, strMealThumb: recipe.strMealThumb, strInstructions: recipe.strInstructions)
             do {
-                let result = try database.createRandomRecipe(recipe: responseRecipe)
+                _ = try database.createRandomRecipe(recipe: responseRecipe)
             } catch {
                 print("error add database")
             }

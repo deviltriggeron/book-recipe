@@ -10,7 +10,7 @@ import RealmSwift
 
 struct CategoryView: View {
     @Environment(\.colorScheme) private var colorScheme
-    var container: Injection
+    @State var container: Injection
     @StateObject var controller: Controller
     init(container: Injection) {
         _controller = .init(wrappedValue: container.resolve(Controller.self)!)
