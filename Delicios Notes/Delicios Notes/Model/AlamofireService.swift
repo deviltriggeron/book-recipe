@@ -34,7 +34,6 @@ class AlamofireService: ObservableObject {
         }
     }
 
-    
     func getRecipeCategory(category: String) -> Observable<Recipes> {
         let urlRecipes: String = "https://www.themealdb.com/api/json/v1/1/filter.php?c=\(category)"
         return Observable.create { observer in
@@ -77,10 +76,10 @@ class AlamofireService: ObservableObject {
         }).disposed(by: bag)
     }
     
-    func getRandomRecipe() -> Observable<RandomRecipe> {
+    func getRandomRecipe() -> Observable<Recipe> {
         let urlRandomRecipe: String = "https://www.themealdb.com/api/json/v1/1/random.php"
         return Observable.create { observer in
-            AF.request(urlRandomRecipe, method: .get).responseDecodable(of: RandomRecipe.self) { response in
+            AF.request(urlRandomRecipe, method: .get).responseDecodable(of: Recipe.self) { response in
                 switch response.result {
                 case .success(let randomRecipe):
                     observer.onNext(randomRecipe)
@@ -93,7 +92,7 @@ class AlamofireService: ObservableObject {
         }
     }
     
-    func typeCastAndAdd(_ response: RandomRecipe) {
+    func typeCastAndAdd(_ response: Recipe) {
         for recipe in response.meals {
             let responseRecipe: RecipeObject = RecipeObject(idMeal: recipe.idMeal, strMeal: recipe.strMeal, strMealThumb: recipe.strMealThumb, strInstructions: recipe.strInstructions)
             do {

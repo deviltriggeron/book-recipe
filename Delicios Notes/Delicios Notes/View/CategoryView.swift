@@ -12,6 +12,7 @@ struct CategoryView: View {
     @Environment(\.colorScheme) private var colorScheme
     @State var container: Injection
     @StateObject var controller: Controller
+    
     init(container: Injection) {
         _controller = .init(wrappedValue: container.resolve(Controller.self)!)
         self.container = container
@@ -60,16 +61,3 @@ struct CategoryView: View {
         }
     }
 }
-
-//struct FavouriteRecipe: View {
-//    var body: some View {
-//        
-//    }
-//}
-
-
-
-
-
-            
-

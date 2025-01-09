@@ -54,7 +54,3 @@ struct RecipeFromApi: Decodable, Identifiable, Hashable {
 struct Recipe: Decodable {
     let meals: [RecipeFromApi]
 }
-
-struct RandomRecipe: Decodable {
-    let meals: [RecipeFromApi]
-}

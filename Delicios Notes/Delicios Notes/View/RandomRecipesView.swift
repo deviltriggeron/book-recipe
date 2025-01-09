@@ -11,16 +11,14 @@ struct RandomRecipeView: View {
     @Environment(\.colorScheme) private var colorScheme
     @State var container: Injection
     @StateObject var controller: Controller
-    @StateObject var database: Database
     init(container: Injection) {
         _controller = StateObject(wrappedValue: container.resolve(Controller.self)!)
-        _database = StateObject(wrappedValue: container.resolve(Database.self)!)
         self.container = container
     }
     var body: some View {
         ScrollView {
             ForEach(controller.publishedVar.randomRecipe, id: \.idMeal) { recipe in
-                NavigationLink(destination: RandomRecipeInstructionView(recipe: recipe)) {
+                NavigationLink(destination: RandomRecipeInstructionView(controller: controller, recipe: recipe)) {
                     HStack {
                         Text("\(recipe.strMeal)")
                             .font(.title3)
@@ -41,57 +39,21 @@ struct RandomRecipeView: View {
                     .cornerRadius(10)
                     .shadow(radius: 5)
                     .padding(.horizontal)
-                    }
-                }
-                .padding()
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Recipes for every day")
-                        .font(.largeTitle)
-                        .accessibilityAddTraits(.isHeader)
                 }
             }
-            .onAppear() {
-                controller.dateUpdate()
-                controller.getRandomRecipe()
+            .padding()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Recipes for every day")
+                    .font(.largeTitle)
+                    .accessibilityAddTraits(.isHeader)
+            }
+        }
+        .onAppear() {
+            controller.dateUpdate()
+            controller.getRandomRecipe()
         }
     }
-    
-//    private func dateUpdate() {
-//        let dateInt = controller.getDate()
-//        if isFirstLaunch() {
-//            do {
-//                let date: DateObject = DateObject(day: dateInt)
-//                _ = try database.createDate(date: date)
-//                controller.getTenRandomRecipes()
-//            } catch {
-//                print("error first")
-//            }
-//        } else {
-//            do {
-//                let date: DateObject = DateObject(day: dateInt)
-//                let dateArray = database.readDate()
-//                if dateArray[0].day != date.day {
-//                    _ = try database.updateDate(updatedDate: dateArray[0], newDate: dateInt)
-//                    let randomRecipeArray = database.readRandomRecipe()
-//                    for deletedIndex in 0...database.readRandomRecipe().count - 1 {
-//                        _ = try database.deleteRandomRecipe(deletedRecipe: randomRecipeArray[deletedIndex])
-//                    }
-//                    controller.getTenRandomRecipes()
-//                }
-//            } catch {
-//                print("error not first")
-//            }
-//        }
-//    }
 }
-
-//private func isFirstLaunch() -> Bool {
-//    let isFirstLaunch = !UserDefaults.standard.bool(forKey: "HasLaunchedBefore")
-//    if isFirstLaunch {
-//        UserDefaults.standard.set(true, forKey: "HasLaunchedBefore")
-//    }
-//    return isFirstLaunch
-//}

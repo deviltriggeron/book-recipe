@@ -9,6 +9,7 @@ import Foundation
 import Swinject
 
 class Injection {
+    
     static let shared = Injection()
     
     let container: Container

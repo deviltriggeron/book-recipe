@@ -30,7 +30,9 @@ struct MainView: View {
                         .foregroundColor(.black)
                 }
             
-            Text("Favourites")
+            NavigationView {
+                FavoriteView(container: container)
+            }
                 .tabItem() {
                     Image(systemName: "heart")
                         .foregroundColor(.black)

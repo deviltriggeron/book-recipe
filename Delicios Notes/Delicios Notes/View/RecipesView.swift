@@ -23,7 +23,7 @@ struct RecipesView: View {
                 Text(category.strCategoryDescription)
                     .padding()
                 ForEach(controller.publishedVar.recipes.meals, id: \.idMeal) { recipes in
-                    NavigationLink(destination: RecipeView(controller: controller, recipe: recipes)) {
+                    NavigationLink(destination: RecipeView(controller: controller, recipe: recipes.strMeal)) {
                         HStack {
                             Text(recipes.strMeal)
                                 .font(.title3)

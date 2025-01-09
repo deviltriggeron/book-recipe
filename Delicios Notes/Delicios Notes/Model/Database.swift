@@ -9,6 +9,7 @@ import Foundation
 import RealmSwift
 
 class Database: ObservableObject {
+    
     static let shared = Database()
     
     private let realm: Realm
@@ -145,6 +146,11 @@ class Database: ObservableObject {
         
         return true
     }
+    
+    func search(strMeal: String) throws -> [FavoriteRecipeObject?] {
+        return Array(realm.objects(FavoriteRecipeObject.self).filter("strMeal CONTAINS[cd] %@", strMeal))
+    }
+
     
     // MARK: delete data base
     

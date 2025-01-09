@@ -9,7 +9,9 @@ import SwiftUI
 
 struct RandomRecipeInstructionView: View {
     @Environment(\.colorScheme) private var colorScheme
+    @StateObject var controller: Controller
     var recipe: RecipeObject
+    @State var favoriteStatus: Bool = false
     var body: some View {
         VStack {
             Text("Recipe: \(recipe.strMeal)")
@@ -36,5 +38,33 @@ struct RandomRecipeInstructionView: View {
                 .padding(.horizontal)
             }
         }
+        .toolbar() {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    favoriteStatus.toggle()
+                    favoriteStatus ? addRecipeToFavorite() : deleteRecipeFromFavorite()
+                }, label: {
+                    if favoriteStatus {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(.red)
+                    } else {
+                        Image(systemName: "heart")
+                    }
+                })
+            }
+        }
+        .onAppear() {
+            favoriteStatus = controller.searchRecipeInDatabase(name: recipe.strMeal)
+        }
     }
+    
+    private func addRecipeToFavorite() {
+        controller.addToDataBaseFromRandom(recipe: recipe)
+    }
+    
+    private func deleteRecipeFromFavorite() {
+        controller.removeFromDataBase(recipe: recipe)
+    }
+    
+
 }
